@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDC3B81C13AE594400F605A7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC3B81B13AE594400F605A7 /* Cocoa.framework */; };
+		DDC3B82613AE594400F605A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDC3B82413AE594400F605A7 /* InfoPlist.strings */; };
+		DDC3B82813AE594400F605A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3B82713AE594400F605A7 /* main.m */; };
+		DDC3B82C13AE594400F605A7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DDC3B82A13AE594400F605A7 /* Credits.rtf */; };
+		DDC3B82F13AE594400F605A7 /* RoskildeFestivalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3B82E13AE594400F605A7 /* RoskildeFestivalAppDelegate.m */; };
+		DDC3B83213AE594500F605A7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC3B83013AE594500F605A7 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DDC3B81713AE594400F605A7 /* RoskildeFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoskildeFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC3B81B13AE594400F605A7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DDC3B81E13AE594400F605A7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DDC3B81F13AE594400F605A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DDC3B82013AE594400F605A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDC3B82313AE594400F605A7 /* RoskildeFestival-Info.plist */ = {isa = PBXFileReference; path = "RoskildeFestival-Info.plist"; sourceTree = "<group>"; };
+		DDC3B82513AE594400F605A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDC3B82713AE594400F605A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDC3B82913AE594400F605A7 /* RoskildeFestival-Prefix.pch */ = {isa = PBXFileReference; path = "RoskildeFestival-Prefix.pch"; sourceTree = "<group>"; };
+		DDC3B82B13AE594400F605A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DDC3B82D13AE594400F605A7 /* RoskildeFestivalAppDelegate.h */ = {isa = PBXFileReference; path = RoskildeFestivalAppDelegate.h; sourceTree = "<group>"; };
+		DDC3B82E13AE594400F605A7 /* RoskildeFestivalAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoskildeFestivalAppDelegate.m; sourceTree = "<group>"; };
+		DDC3B83113AE594500F605A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDC3B81413AE594400F605A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC3B81C13AE594400F605A7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDC3B80C13AE594400F605A7 = {
+			isa = PBXGroup;
+			children = (
+				DDC3B82113AE594400F605A7 /* RoskildeFestival */,
+				DDC3B81A13AE594400F605A7 /* Frameworks */,
+				DDC3B81813AE594400F605A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDC3B81813AE594400F605A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3B81713AE594400F605A7 /* RoskildeFestival.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDC3B81A13AE594400F605A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3B81B13AE594400F605A7 /* Cocoa.framework */,
+				DDC3B81D13AE594400F605A7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDC3B81D13AE594400F605A7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3B81E13AE594400F605A7 /* AppKit.framework */,
+				DDC3B81F13AE594400F605A7 /* CoreData.framework */,
+				DDC3B82013AE594400F605A7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DDC3B82113AE594400F605A7 /* RoskildeFestival */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3B82D13AE594400F605A7 /* RoskildeFestivalAppDelegate.h */,
+				DDC3B82E13AE594400F605A7 /* RoskildeFestivalAppDelegate.m */,
+				DDC3B83013AE594500F605A7 /* MainMenu.xib */,
+				DDC3B82213AE594400F605A7 /* Supporting Files */,
+			);
+			path = RoskildeFestival;
+			sourceTree = "<group>";
+		};
+		DDC3B82213AE594400F605A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3B82313AE594400F605A7 /* RoskildeFestival-Info.plist */,
+				DDC3B82413AE594400F605A7 /* InfoPlist.strings */,
+				DDC3B82713AE594400F605A7 /* main.m */,
+				DDC3B82913AE594400F605A7 /* RoskildeFestival-Prefix.pch */,
+				DDC3B82A13AE594400F605A7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDC3B81613AE594400F605A7 /* RoskildeFestival */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC3B83513AE594500F605A7 /* Build configuration list for PBXNativeTarget "RoskildeFestival" */;
+			buildPhases = (
+				DDC3B81313AE594400F605A7 /* Sources */,
+				DDC3B81413AE594400F605A7 /* Frameworks */,
+				DDC3B81513AE594400F605A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoskildeFestival;
+			productName = RoskildeFestival;
+			productReference = DDC3B81713AE594400F605A7 /* RoskildeFestival.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDC3B80E13AE594400F605A7 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DDC3B81113AE594400F605A7 /* Build configuration list for PBXProject "RoskildeFestival" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DDC3B80C13AE594400F605A7;
+			productRefGroup = DDC3B81813AE594400F605A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDC3B81613AE594400F605A7 /* RoskildeFestival */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDC3B81513AE594400F605A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC3B82613AE594400F605A7 /* InfoPlist.strings in Resources */,
+				DDC3B82C13AE594400F605A7 /* Credits.rtf in Resources */,
+				DDC3B83213AE594500F605A7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDC3B81313AE594400F605A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC3B82813AE594400F605A7 /* main.m in Sources */,
+				DDC3B82F13AE594400F605A7 /* RoskildeFestivalAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDC3B82413AE594400F605A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC3B82513AE594400F605A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DDC3B82A13AE594400F605A7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC3B82B13AE594400F605A7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DDC3B83013AE594500F605A7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC3B83113AE594500F605A7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDC3B83313AE594500F605A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DDC3B83413AE594500F605A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DDC3B83613AE594500F605A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoskildeFestival/RoskildeFestival-Prefix.pch";
+				INFOPLIST_FILE = "RoskildeFestival/RoskildeFestival-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDC3B83713AE594500F605A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoskildeFestival/RoskildeFestival-Prefix.pch";
+				INFOPLIST_FILE = "RoskildeFestival/RoskildeFestival-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDC3B81113AE594400F605A7 /* Build configuration list for PBXProject "RoskildeFestival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC3B83313AE594500F605A7 /* Debug */,
+				DDC3B83413AE594500F605A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC3B83513AE594500F605A7 /* Build configuration list for PBXNativeTarget "RoskildeFestival" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC3B83613AE594500F605A7 /* Debug */,
+				DDC3B83713AE594500F605A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDC3B80E13AE594400F605A7 /* Project object */;
+}
