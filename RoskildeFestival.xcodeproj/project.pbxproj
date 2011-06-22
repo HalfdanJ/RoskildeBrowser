@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD67D6A613B277C8004F109E /* RFWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DD67D6A513B277C8004F109E /* RFWindow.m */; };
 		DD6D3FDD13B13C5C002D8CF8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6D3FDC13B13C5C002D8CF8 /* bg.png */; };
 		DD6D3FE113B13EFC002D8CF8 /* RFMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D3FE013B13EFC002D8CF8 /* RFMainView.m */; };
 		DD6D3FE413B14429002D8CF8 /* RFTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D3FE313B14429002D8CF8 /* RFTopView.m */; };
@@ -57,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DD67D6A413B277C8004F109E /* RFWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFWindow.h; sourceTree = "<group>"; };
+		DD67D6A513B277C8004F109E /* RFWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFWindow.m; sourceTree = "<group>"; };
 		DD6D3FDC13B13C5C002D8CF8 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		DD6D3FDF13B13EFC002D8CF8 /* RFMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMainView.h; sourceTree = "<group>"; };
 		DD6D3FE013B13EFC002D8CF8 /* RFMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMainView.m; sourceTree = "<group>"; };
@@ -262,6 +265,8 @@
 				DDA533C313AFAB7A004FD2B3 /* AudioStreamer.h */,
 				DDA533C413AFAB7A004FD2B3 /* AudioStreamer.m */,
 				DDA533D613AFC0E0004FD2B3 /* Classes */,
+				DD67D6A413B277C8004F109E /* RFWindow.h */,
+				DD67D6A513B277C8004F109E /* RFWindow.m */,
 			);
 			path = RoskildeFestival;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 				DDA533FC13AFC0E0004FD2B3 /* SBJsonWriter.m in Sources */,
 				DD6D3FE113B13EFC002D8CF8 /* RFMainView.m in Sources */,
 				DD6D3FE413B14429002D8CF8 /* RFTopView.m in Sources */,
+				DD67D6A613B277C8004F109E /* RFWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

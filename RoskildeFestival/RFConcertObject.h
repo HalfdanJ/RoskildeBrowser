@@ -29,6 +29,8 @@
     float relativeDuration;
     
     RFConcertLayer * layer;
+    
+    int rating;
 }
 
 @property (retain) NSString * name;
@@ -53,6 +55,7 @@
 @property (retain) RFConcertLayer * layer;
 
 @property (readwrite) float relativeDuration;
+@property (readwrite) int rating;
 
 -(void) setSceneString:(NSString*)string;
 

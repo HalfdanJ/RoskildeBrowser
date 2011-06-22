@@ -14,6 +14,7 @@
     
     AudioStreamer *streamer;
     SBJsonParser *parser;
+    BOOL stop;
 }
 
 -(void) startSoundForArtist:(NSString*) artist;

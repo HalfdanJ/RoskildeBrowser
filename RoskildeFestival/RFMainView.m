@@ -10,16 +10,6 @@
 
 @implementation RFMainView
 
-- (id)initWithFrame:(NSRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code here.
-    }
-    
-    return self;
-}
-
 -(void)awakeFromNib{
     bg = [NSColor colorWithPatternImage:[NSImage imageNamed:@"bg.png"]];
 
@@ -29,4 +19,5 @@
     [bg set];
     NSRectFill(rect);
 }
+
 @end

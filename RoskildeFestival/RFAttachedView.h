@@ -1,18 +1,16 @@
-//
-//  RFAttachedView.h
-//  RoskildeFestival
-//
-//  Created by Jonas Jongejan on 6/20/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import <Cocoa/Cocoa.h>
+
+@class RFConcertObject;
 
 @interface RFAttachedView : NSView {
     NSImageView *image;
     NSTextView *description;
     NSTextField *name;
     NSTextField *place;
+    RFConcertObject * object;
+    
+    NSButton * likeButton;
+    NSButton * dislikeButton;
 }
 @property (assign) IBOutlet NSTextField *place;
 @property (assign) IBOutlet NSTextField *name;
@@ -20,4 +18,10 @@
 @property (assign) IBOutlet NSImageView *image;
 @property (assign) IBOutlet NSTextView *description;
 
+@property (assign) IBOutlet NSButton *likeButton;
+@property (assign) IBOutlet NSButton *dislikeButton;
+@property (assign) RFConcertObject * object;
+
+-(IBAction)dislike:(id)sender;
+-(IBAction)like:(id)sender;
 @end

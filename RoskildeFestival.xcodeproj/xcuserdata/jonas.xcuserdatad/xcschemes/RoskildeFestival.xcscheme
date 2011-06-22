@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DDC3B81613AE594400F605A7"
-               BuildableName = "RoskildeFestival.app"
+               BuildableName = "Roskilde Festival.app"
                BlueprintName = "RoskildeFestival"
                ReferencedContainer = "container:RoskildeFestival.xcodeproj">
             </BuildableReference>
@@ -40,7 +40,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC3B81613AE594400F605A7"
-            BuildableName = "RoskildeFestival.app"
+            BuildableName = "Roskilde Festival.app"
             BlueprintName = "RoskildeFestival"
             ReferencedContainer = "container:RoskildeFestival.xcodeproj">
          </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC3B81613AE594400F605A7"
-            BuildableName = "RoskildeFestival.app"
+            BuildableName = "Roskilde Festival.app"
             BlueprintName = "RoskildeFestival"
             ReferencedContainer = "container:RoskildeFestival.xcodeproj">
          </BuildableReference>

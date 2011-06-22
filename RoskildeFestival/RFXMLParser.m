@@ -31,6 +31,10 @@ static NSDictionary * jsonFile;
     //Load josnfile from server
     NSString * jsonstring = [NSString stringWithContentsOfURL:[NSURL URLWithString:urlString] encoding:NSUTF8StringEncoding error:nil];    
     jsonFile = [jsonparser objectWithString:jsonstring];
+    if(jsonFile == nil){
+        NSLog(@"Could not read JSON from halfdanj.dk");
+    }
+   // NSLog(@"Json %@",jsonFile);
     
     //Load concert data from roskilde server
     NSData * d = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://roskilde-festival.dk/typo3conf/ext/tcpageheaderobjects/xml/bandobjects_251_uk.xml"]];
@@ -66,9 +70,34 @@ didStartElement:(NSString *)elementName
  qualifiedName:(NSString *)qName
 {
     if ([elementName isEqual:@"item"]) {
+      /*  if([[jsonFile objectForKey:tmpConcert.name] objectForKey:@"itunes"] && ![[jsonFile objectForKey:tmpConcert.name] objectForKey:@"link"]){
+            NSString * link = [[jsonFile objectForKey:tmpConcert.name] objectForKey:@"itunes"];
+            NSMutableString* urlString = [NSMutableString stringWithCapacity:100];        
+            [urlString setString:link];        
+            [urlString appendString:@"?"];
+            [urlString appendString:[[NSNumber numberWithLong:random()] stringValue]];
+            NSString * itunesHtml = [NSString stringWithContentsOfURL:[NSURL URLWithString:urlString] encoding:NSUTF8StringEncoding error:nil];
+            NSArray * previews = [itunesHtml componentsSeparatedByString:@"audio-preview-url=\""];            
+            if([previews count] < 2){
+                NSLog(@"Problem loading itunes html %@",link);
+            } else {
+                NSString * preview = [previews objectAtIndex:1];
+                NSRange pos = [preview rangeOfString:@"\""];
+                preview = [preview substringToIndex:pos.location];
+                
+                //   NSLog(@"Preview : %@",preview);
+                //   url = [NSURL URLWithString:preview];
+                NSLog(@"\n%@ \n\"link\":\"%@\",",tmpConcert.name, preview);
+            }
+        } 
+        
+        */
+        
         BOOL doAdd = YES;
         NSString * name = [NSString stringWithString:tmpConcert.name];
         tmpConcert.relativeDuration = 1.0f;
+        
+        
         
         if([jsonFile objectForKey:name]){            
             if([[jsonFile objectForKey:name] objectForKey:@"short"]){
@@ -80,12 +109,18 @@ didStartElement:(NSString *)elementName
             if([[jsonFile objectForKey:name] objectForKey:@"hidden"]){
                 doAdd = NO;
             } 
+            if([[jsonFile objectForKey:name] objectForKey:@"move"]){
+                tmpConcert.date = [NSDate dateWithTimeInterval:60*60*1.5 sinceDate:tmpConcert.date];
+            } 
+
 
         }else {
-           // NSLog(@"No item in json file for |%@|",name);
+            if(tmpConcert.day >= 0)
+                NSLog(@"No item in json file for |%@|",name);
         }
         
         if(doAdd){
+          //  NSLog(@"%@",tmpConcert.name);
             [delegate addConcert:tmpConcert];
         }
     }

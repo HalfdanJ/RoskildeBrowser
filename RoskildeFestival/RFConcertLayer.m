@@ -64,16 +64,28 @@
         [attachedWindow setBorderColor:[NSColor colorWithCalibratedWhite:1.0 alpha:1.0]];
     //    [textField setTextColor:[NSColor colorWithCalibratedWhite:1.0 alpha:1.0]];
         [attachedWindow setBackgroundColor:[NSColor colorWithCalibratedWhite:0.0 alpha:0.8]];
-        [attachedWindow setViewMargin:2.0];
-        [attachedWindow setBorderWidth:5.0];
-        [attachedWindow setCornerRadius:5.0];
+        [attachedWindow setViewMargin:2.0f];
+        [attachedWindow setBorderWidth:5.0f];
+        [attachedWindow setCornerRadius:5.0f];
         [attachedWindow setHasArrow:YES];
         [attachedWindow setDrawsRoundCornerBesideArrow:YES];
-        [attachedWindow setArrowBaseWidth:10.0];
-        [attachedWindow setArrowHeight:10.0];
+        [attachedWindow setArrowBaseWidth:10.0f];
+        [attachedWindow setArrowHeight:10.0f];
         
         [[[controller attachedView] name] setStringValue:[concert name]];
         
+        [[[controller attachedView] likeButton] setState:0];
+        [[[controller attachedView] dislikeButton] setState:0];
+
+        if(concert.rating == 1){
+            [[[controller attachedView] likeButton] setState:1];
+        }
+        if(concert.rating == -1){
+            [[[controller attachedView] dislikeButton] setState:1];
+        }
+
+        [[controller attachedView] setObject:concert];
+
         NSString * stage;
         switch (concert.scene) {
             case 0:

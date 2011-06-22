@@ -7,12 +7,14 @@
 //
 
 #import "RFAttachedView.h"
+#import "RFConcertObject.h"
 
 @implementation RFAttachedView
 @synthesize place;
 @synthesize name;
 @synthesize image;
-@synthesize description;
+@synthesize description, likeButton, dislikeButton, object;
+
 
 - (id)initWithFrame:(NSRect)frame
 {
@@ -29,8 +31,22 @@
     // Drawing code here.
 }
 
--(void)keyDown:(NSEvent *)theEvent{
-    NSLog(@"event %@",theEvent);
+-(void)dislike:(id)sender{
+    if([sender state]){
+        object.rating = -1;
+    } else {
+        object.rating = 0;
+    }
+    [likeButton setState:0];
+}
+
+-(void)like:(id)sender{
+    if([sender state]){
+        object.rating = 1;
+    } else {
+        object.rating = 0;
+    }
+    [dislikeButton setState:0];
 }
 
 @end

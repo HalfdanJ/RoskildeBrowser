@@ -16,7 +16,7 @@
 @class RFTopView;
 @class RFAttachedView;
 
-@interface RFController : NSObject{
+@interface RFController : NSResponder{
     NSMutableArray * daysArray;
     NSMutableArray * concertArray;
     NSView *view;
@@ -36,5 +36,6 @@
 
 -(void) addConcert:(RFConcertObject*)concert;
 -(void) finishedParsing;
+-(void) stop;
 
 @end

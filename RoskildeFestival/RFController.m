@@ -51,6 +51,19 @@
     
 }
 
+-(void) stop{
+    for(int day=0;day<4;day++){
+        for(NSMutableArray * stage in [concertArray objectAtIndex:day]){        
+            for(RFConcertObject * concert in stage){   
+                if(concert.layer.attachedWindow){
+                    [concert.layer mouseDown];
+                }
+            }
+        }
+    }
+}
+
+
 -(void)mouseDown:(NSEvent *)theEvent{
 
 }

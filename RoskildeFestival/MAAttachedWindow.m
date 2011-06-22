@@ -29,7 +29,6 @@
 
 @implementation MAAttachedWindow
 
-
 #pragma mark Initializers
 
 
