@@ -26,6 +26,8 @@
     int concertId;
     int day;
     
+    float relativeDuration;
+    
     RFConcertLayer * layer;
 }
 
@@ -49,6 +51,8 @@
 @property (retain) NSImage * smallImage;
 
 @property (retain) RFConcertLayer * layer;
+
+@property (readwrite) float relativeDuration;
 
 -(void) setSceneString:(NSString*)string;
 

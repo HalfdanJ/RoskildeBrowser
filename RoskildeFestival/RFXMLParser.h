@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "RFConcertObject.h"
 
+
+
 @interface RFXMLParser : NSObject<NSXMLParserDelegate>{
     id delegate;
     NSXMLParser * parser; 
@@ -17,11 +19,11 @@
     NSMutableString * textInProgress;
     NSString * keyInProgress;
     
-    NSDictionary * jsonFile;
 }
 
 @property (assign) id delegate;
 
 -(void) startParsing;
++(NSDictionary*) jsonFile;
 
 @end

@@ -8,6 +8,7 @@
 
 
 #import "RFSoundCloud.h"
+#import "RFXMLParser.h"
 
 @implementation RFSoundCloud
 
@@ -27,31 +28,13 @@
 }
 
 -(void) startSoundForArtist:(NSString*) artist{
-    
-    NSURL * url = nil;
-    
-    
-    //Search in json file
-    
-//    NSString * jsonstring = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"file://localhost/Developer/Development/Code/Roskilde/roskildelinks.json"] encoding:NSUTF8StringEncoding error:nil];    
-//    NSString * jsonstring = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://halfdanj.dk/roskilde/roskildelinks.json"] encoding:NSUTF8StringEncoding error:nil];    
-    
-    NSMutableString* urlString = [NSMutableString stringWithCapacity:100];        
-    [urlString setString:@"http://halfdanj.dk/roskilde/roskildelinks.json"];        
-    [urlString appendString:@"?"];
-    [urlString appendString:[[NSNumber numberWithLong:random()] stringValue]];
-    
-    
-    NSString * jsonstring = [NSString stringWithContentsOfURL:[NSURL URLWithString:urlString] encoding:NSUTF8StringEncoding error:nil];  
-    
-    NSDictionary * jsonFile = [parser objectWithString:jsonstring];
+    NSURL * url = nil;    
+    NSDictionary * jsonFile = [RFXMLParser jsonFile];
    //  NSLog(@"%@",jsonFile);
     if([jsonFile objectForKey:artist]){
         if([[jsonFile objectForKey:artist] objectForKey:@"link"]){
             url = [NSURL URLWithString:[[jsonFile objectForKey:artist] objectForKey:@"link"]];
             NSLog(@"Preview : %@",[[jsonFile objectForKey:artist] objectForKey:@"link"]);
-
-
         } else if([[jsonFile objectForKey:artist] objectForKey:@"itunes"]){
             NSString * link = [[jsonFile objectForKey:artist] objectForKey:@"itunes"];
             
@@ -80,7 +63,6 @@
         NSString * data = [NSString stringWithContentsOfURL:getUrl encoding:NSUTF8StringEncoding error:&error];
         
         id object = [parser objectWithString:data];
-        
         
         
         BOOL trackFound = NO;
@@ -113,15 +95,8 @@
     }
     
     if(url){
-        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-        
-//        dispatch_async(queue, ^{
-            streamer = [[AudioStreamer alloc] initWithURL:url];
-  //          dispatch_async(dispatch_get_main_queue(), ^{
-            [streamer start];
-    //        });
-      //  });
-
+        streamer = [[AudioStreamer alloc] initWithURL:url];
+        [streamer start];
     }
 }
 

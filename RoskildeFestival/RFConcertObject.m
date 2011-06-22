@@ -9,7 +9,7 @@
 #import "RFConcertObject.h"
 
 @implementation RFConcertObject
-@synthesize date, link, name, scene, country, imageUrl, priority,subtitle,concertId,longdescription,smallImageUrl, day, smallImage, image;
+@synthesize date, link, name, scene, country, imageUrl, priority,subtitle,concertId,longdescription,smallImageUrl, day, smallImage, image, relativeDuration;
 @synthesize layer;
 
 - (id)init
@@ -39,6 +39,10 @@
 -(void)setLayer:(RFConcertLayer *)_layer{
     layer = _layer;
     [layer setConcert:self];
+    
+    if([self relativeDuration] != 1){
+        [layer setBounds:CGRectMake(0, 0, layer.bounds.size.width, layer.bounds.size.height*self.relativeDuration)];
+    }
 }
 
 -(void)setSceneString:(NSString *)string{

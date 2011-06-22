@@ -1,14 +1,7 @@
-//
-//  ConcertLayer.m
-//  RoskildeFestival
-//
-//  Created by Jonas Jongejan on 6/19/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "RFConcertLayer.h"
 #import "RFController.h"
 #import "RFAttachedView.h"
+
 @implementation RFConcertLayer
 @synthesize concert, attachedWindow;
 - (id)init

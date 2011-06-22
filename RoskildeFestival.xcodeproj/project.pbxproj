@@ -11,6 +11,7 @@
 		DD6D3FE113B13EFC002D8CF8 /* RFMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D3FE013B13EFC002D8CF8 /* RFMainView.m */; };
 		DD6D3FE413B14429002D8CF8 /* RFTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D3FE313B14429002D8CF8 /* RFTopView.m */; };
 		DD6D3FE713B144E2002D8CF8 /* topbg.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6D3FE613B144E2002D8CF8 /* topbg.png */; };
+		DD6D3FEC13B25E1E002D8CF8 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DD6D3FEA13B25DC4002D8CF8 /* icon.icns */; };
 		DD77999F13AE993500011BF5 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77999E13AE993500011BF5 /* MAAttachedWindow.m */; };
 		DD7799A313AE9A2E00011BF5 /* RFView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7799A213AE9A2E00011BF5 /* RFView.m */; };
 		DD7799A613AEAF8F00011BF5 /* RFAttachedView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7799A513AEAF8F00011BF5 /* RFAttachedView.m */; };
@@ -62,6 +63,7 @@
 		DD6D3FE213B14429002D8CF8 /* RFTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTopView.h; sourceTree = "<group>"; };
 		DD6D3FE313B14429002D8CF8 /* RFTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTopView.m; sourceTree = "<group>"; };
 		DD6D3FE613B144E2002D8CF8 /* topbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbg.png; sourceTree = "<group>"; };
+		DD6D3FEA13B25DC4002D8CF8 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		DD77999D13AE993500011BF5 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		DD77999E13AE993500011BF5 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
 		DD7799A113AE9A2E00011BF5 /* RFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFView.h; sourceTree = "<group>"; };
@@ -107,7 +109,7 @@
 		DDB80BF913AE631C00062AA3 /* RFXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFXMLParser.m; sourceTree = "<group>"; };
 		DDB80BFB13AE633100062AA3 /* RFConcertObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFConcertObject.h; sourceTree = "<group>"; };
 		DDB80BFC13AE633100062AA3 /* RFConcertObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFConcertObject.m; sourceTree = "<group>"; };
-		DDC3B81713AE594400F605A7 /* RoskildeFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoskildeFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC3B81713AE594400F605A7 /* Roskilde Festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roskilde Festival.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC3B81B13AE594400F605A7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DDC3B81E13AE594400F605A7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DDC3B81F13AE594400F605A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -199,6 +201,7 @@
 		DDC3B80C13AE594400F605A7 = {
 			isa = PBXGroup;
 			children = (
+				DD6D3FEA13B25DC4002D8CF8 /* icon.icns */,
 				DDC3B82113AE594400F605A7 /* RoskildeFestival */,
 				DDC3B81A13AE594400F605A7 /* Frameworks */,
 				DDC3B81813AE594400F605A7 /* Products */,
@@ -208,7 +211,7 @@
 		DDC3B81813AE594400F605A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDC3B81713AE594400F605A7 /* RoskildeFestival.app */,
+				DDC3B81713AE594400F605A7 /* Roskilde Festival.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -293,7 +296,7 @@
 			);
 			name = RoskildeFestival;
 			productName = RoskildeFestival;
-			productReference = DDC3B81713AE594400F605A7 /* RoskildeFestival.app */;
+			productReference = DDC3B81713AE594400F605A7 /* Roskilde Festival.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -327,6 +330,7 @@
 				DDC3B82C13AE594400F605A7 /* Credits.rtf in Resources */,
 				DDC3B83213AE594500F605A7 /* MainMenu.xib in Resources */,
 				DD6D3FDD13B13C5C002D8CF8 /* bg.png in Resources */,
+				DD6D3FEC13B25E1E002D8CF8 /* icon.icns in Resources */,
 				DD6D3FE713B144E2002D8CF8 /* topbg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +422,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.6;
 			};
@@ -440,7 +444,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx10.6;
 			};
 			name = Release;
@@ -456,7 +460,7 @@
 				GCC_PREFIX_HEADER = "RoskildeFestival/RoskildeFestival-Prefix.pch";
 				INFOPLIST_FILE = "RoskildeFestival/RoskildeFestival-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Roskilde Festival";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -472,7 +476,7 @@
 				GCC_PREFIX_HEADER = "RoskildeFestival/RoskildeFestival-Prefix.pch";
 				INFOPLIST_FILE = "RoskildeFestival/RoskildeFestival-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Roskilde Festival";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
