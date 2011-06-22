@@ -60,6 +60,7 @@
     }
     else {//Else look in soundcloud 
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        stop = NO;
         dispatch_async(queue, ^{
             NSString * s;
             if([jsonFile objectForKey:artist] && [[jsonFile objectForKey:artist] objectForKey:@"soundcloudq"]){

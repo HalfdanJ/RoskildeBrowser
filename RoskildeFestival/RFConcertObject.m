@@ -59,7 +59,7 @@
     
     if([self relativeDuration] != 1){
         [layer setBounds:CGRectMake(0, 0, layer.bounds.size.width, layer.bounds.size.height*self.relativeDuration)];
-        [[[layer sublayers] objectAtIndex:0] setBounds:CGRectMake(0, 0, layer.bounds.size.width, layer.bounds.size.height*0.5)];
+        [[[layer sublayers] objectAtIndex:0] setBounds:NSMakeRect(0, 0, layer.bounds.size.width, layer.bounds.size.height*0.5f)];
     }
    
     NSUserDefaults * shared = [NSUserDefaults standardUserDefaults];

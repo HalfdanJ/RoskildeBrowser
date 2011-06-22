@@ -84,7 +84,7 @@
 //Setup the main layer
 -(void)setupHostView {
     CALayer *layer = [CALayer layer]; 
-    layer.bounds = NSMakeRect(0.0, 0.0, view.frame.size.width, view.frame.size.height);
+    layer.bounds = CGRectMake(0.0, 0.0, view.frame.size.width, view.frame.size.height);
     layer.geometryFlipped = YES;
 //    layer.backgroundColor = [NSColor colorWithPatternImage:[NSImage imageNamed:@"bg"]];
     //layer.backgroundColor = [NSColor redColor];    
@@ -94,7 +94,7 @@
     
     
     CALayer * topLayer = [CALayer layer];
-    topLayer.bounds = NSMakeRect(0.0, 0.0, topview.frame.size.width, topview.frame.size.height);
+    topLayer.bounds = CGRectMake(0.0, 0.0, topview.frame.size.width, topview.frame.size.height);
     topLayer.geometryFlipped = YES;
     [topview setLayer:topLayer]; 
     [topview setWantsLayer:YES];
