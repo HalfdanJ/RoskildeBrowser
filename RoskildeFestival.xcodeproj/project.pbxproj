@@ -7,28 +7,121 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD6D3FDD13B13C5C002D8CF8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6D3FDC13B13C5C002D8CF8 /* bg.png */; };
+		DD6D3FE113B13EFC002D8CF8 /* RFMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D3FE013B13EFC002D8CF8 /* RFMainView.m */; };
+		DD6D3FE413B14429002D8CF8 /* RFTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D3FE313B14429002D8CF8 /* RFTopView.m */; };
+		DD6D3FE713B144E2002D8CF8 /* topbg.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6D3FE613B144E2002D8CF8 /* topbg.png */; };
+		DD77999F13AE993500011BF5 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DD77999E13AE993500011BF5 /* MAAttachedWindow.m */; };
+		DD7799A313AE9A2E00011BF5 /* RFView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7799A213AE9A2E00011BF5 /* RFView.m */; };
+		DD7799A613AEAF8F00011BF5 /* RFAttachedView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7799A513AEAF8F00011BF5 /* RFAttachedView.m */; };
+		DD7799BB13AEB80C00011BF5 /* RFSoundCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7799BA13AEB80C00011BF5 /* RFSoundCloud.m */; };
+		DD7799D613AEC78800011BF5 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7799D513AEC78800011BF5 /* QTKit.framework */; };
+		DDA533C113AFAB48004FD2B3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA533C013AFAB48004FD2B3 /* AudioToolbox.framework */; };
+		DDA533C513AFAB7A004FD2B3 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533C413AFAB7A004FD2B3 /* AudioStreamer.m */; };
+		DDA533F113AFC0E0004FD2B3 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533D913AFC0E0004FD2B3 /* NSObject+SBJson.m */; };
+		DDA533F213AFC0E0004FD2B3 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533DC13AFC0E0004FD2B3 /* SBJsonParser.m */; };
+		DDA533F313AFC0E0004FD2B3 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533DE13AFC0E0004FD2B3 /* SBJsonStreamParser.m */; };
+		DDA533F413AFC0E0004FD2B3 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533E013AFC0E0004FD2B3 /* SBJsonStreamParserAccumulator.m */; };
+		DDA533F513AFC0E0004FD2B3 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533E213AFC0E0004FD2B3 /* SBJsonStreamParserAdapter.m */; };
+		DDA533F613AFC0E0004FD2B3 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533E413AFC0E0004FD2B3 /* SBJsonStreamParserState.m */; };
+		DDA533F713AFC0E0004FD2B3 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533E613AFC0E0004FD2B3 /* SBJsonStreamWriter.m */; };
+		DDA533F813AFC0E0004FD2B3 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533E813AFC0E0004FD2B3 /* SBJsonStreamWriterAccumulator.m */; };
+		DDA533F913AFC0E0004FD2B3 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533EA13AFC0E0004FD2B3 /* SBJsonStreamWriterState.m */; };
+		DDA533FA13AFC0E0004FD2B3 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533EC13AFC0E0004FD2B3 /* SBJsonTokeniser.m */; };
+		DDA533FB13AFC0E0004FD2B3 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533EE13AFC0E0004FD2B3 /* SBJsonUTF8Stream.m */; };
+		DDA533FC13AFC0E0004FD2B3 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA533F013AFC0E0004FD2B3 /* SBJsonWriter.m */; };
+		DDB80BF313AE5DAB00062AA3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB80BF213AE5DAB00062AA3 /* QuartzCore.framework */; };
+		DDB80BF713AE5E0900062AA3 /* RFConcertLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB80BF613AE5E0900062AA3 /* RFConcertLayer.m */; };
+		DDB80BFA13AE631C00062AA3 /* RFXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB80BF913AE631C00062AA3 /* RFXMLParser.m */; };
+		DDB80BFD13AE633100062AA3 /* RFConcertObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB80BFC13AE633100062AA3 /* RFConcertObject.m */; };
 		DDC3B81C13AE594400F605A7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC3B81B13AE594400F605A7 /* Cocoa.framework */; };
 		DDC3B82613AE594400F605A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDC3B82413AE594400F605A7 /* InfoPlist.strings */; };
 		DDC3B82813AE594400F605A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3B82713AE594400F605A7 /* main.m */; };
 		DDC3B82C13AE594400F605A7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DDC3B82A13AE594400F605A7 /* Credits.rtf */; };
 		DDC3B82F13AE594400F605A7 /* RoskildeFestivalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3B82E13AE594400F605A7 /* RoskildeFestivalAppDelegate.m */; };
 		DDC3B83213AE594500F605A7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC3B83013AE594500F605A7 /* MainMenu.xib */; };
+		DDC3B83E13AE5C6000F605A7 /* RFController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC3B83D13AE5C5F00F605A7 /* RFController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DD7799C013AEB95C00011BF5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DD6D3FDC13B13C5C002D8CF8 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		DD6D3FDF13B13EFC002D8CF8 /* RFMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFMainView.h; sourceTree = "<group>"; };
+		DD6D3FE013B13EFC002D8CF8 /* RFMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFMainView.m; sourceTree = "<group>"; };
+		DD6D3FE213B14429002D8CF8 /* RFTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFTopView.h; sourceTree = "<group>"; };
+		DD6D3FE313B14429002D8CF8 /* RFTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFTopView.m; sourceTree = "<group>"; };
+		DD6D3FE613B144E2002D8CF8 /* topbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbg.png; sourceTree = "<group>"; };
+		DD77999D13AE993500011BF5 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
+		DD77999E13AE993500011BF5 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
+		DD7799A113AE9A2E00011BF5 /* RFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFView.h; sourceTree = "<group>"; };
+		DD7799A213AE9A2E00011BF5 /* RFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFView.m; sourceTree = "<group>"; };
+		DD7799A413AEAF8F00011BF5 /* RFAttachedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFAttachedView.h; sourceTree = "<group>"; };
+		DD7799A513AEAF8F00011BF5 /* RFAttachedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFAttachedView.m; sourceTree = "<group>"; };
+		DD7799B913AEB80B00011BF5 /* RFSoundCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSoundCloud.h; sourceTree = "<group>"; };
+		DD7799BA13AEB80C00011BF5 /* RFSoundCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSoundCloud.m; sourceTree = "<group>"; };
+		DD7799D513AEC78800011BF5 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		DDA533C013AFAB48004FD2B3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DDA533C313AFAB7A004FD2B3 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		DDA533C413AFAB7A004FD2B3 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		DDA533D713AFC0E0004FD2B3 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		DDA533D813AFC0E0004FD2B3 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		DDA533D913AFC0E0004FD2B3 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		DDA533DA13AFC0E0004FD2B3 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		DDA533DB13AFC0E0004FD2B3 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		DDA533DC13AFC0E0004FD2B3 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		DDA533DD13AFC0E0004FD2B3 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		DDA533DE13AFC0E0004FD2B3 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		DDA533DF13AFC0E0004FD2B3 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		DDA533E013AFC0E0004FD2B3 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		DDA533E113AFC0E0004FD2B3 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		DDA533E213AFC0E0004FD2B3 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		DDA533E313AFC0E0004FD2B3 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		DDA533E413AFC0E0004FD2B3 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		DDA533E513AFC0E0004FD2B3 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		DDA533E613AFC0E0004FD2B3 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		DDA533E713AFC0E0004FD2B3 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		DDA533E813AFC0E0004FD2B3 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		DDA533E913AFC0E0004FD2B3 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		DDA533EA13AFC0E0004FD2B3 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		DDA533EB13AFC0E0004FD2B3 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		DDA533EC13AFC0E0004FD2B3 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		DDA533ED13AFC0E0004FD2B3 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		DDA533EE13AFC0E0004FD2B3 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		DDA533EF13AFC0E0004FD2B3 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		DDA533F013AFC0E0004FD2B3 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		DDB80BF213AE5DAB00062AA3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../../System/Library/Frameworks/QuartzCore.framework; sourceTree = "<group>"; };
+		DDB80BF513AE5E0900062AA3 /* RFConcertLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFConcertLayer.h; sourceTree = "<group>"; };
+		DDB80BF613AE5E0900062AA3 /* RFConcertLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFConcertLayer.m; sourceTree = "<group>"; };
+		DDB80BF813AE631C00062AA3 /* RFXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFXMLParser.h; sourceTree = "<group>"; };
+		DDB80BF913AE631C00062AA3 /* RFXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFXMLParser.m; sourceTree = "<group>"; };
+		DDB80BFB13AE633100062AA3 /* RFConcertObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFConcertObject.h; sourceTree = "<group>"; };
+		DDB80BFC13AE633100062AA3 /* RFConcertObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFConcertObject.m; sourceTree = "<group>"; };
 		DDC3B81713AE594400F605A7 /* RoskildeFestival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoskildeFestival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC3B81B13AE594400F605A7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DDC3B81E13AE594400F605A7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DDC3B81F13AE594400F605A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DDC3B82013AE594400F605A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DDC3B82313AE594400F605A7 /* RoskildeFestival-Info.plist */ = {isa = PBXFileReference; path = "RoskildeFestival-Info.plist"; sourceTree = "<group>"; };
+		DDC3B82313AE594400F605A7 /* RoskildeFestival-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoskildeFestival-Info.plist"; sourceTree = "<group>"; };
 		DDC3B82513AE594400F605A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDC3B82713AE594400F605A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DDC3B82913AE594400F605A7 /* RoskildeFestival-Prefix.pch */ = {isa = PBXFileReference; path = "RoskildeFestival-Prefix.pch"; sourceTree = "<group>"; };
+		DDC3B82913AE594400F605A7 /* RoskildeFestival-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoskildeFestival-Prefix.pch"; sourceTree = "<group>"; };
 		DDC3B82B13AE594400F605A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		DDC3B82D13AE594400F605A7 /* RoskildeFestivalAppDelegate.h */ = {isa = PBXFileReference; path = RoskildeFestivalAppDelegate.h; sourceTree = "<group>"; };
+		DDC3B82D13AE594400F605A7 /* RoskildeFestivalAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoskildeFestivalAppDelegate.h; sourceTree = "<group>"; };
 		DDC3B82E13AE594400F605A7 /* RoskildeFestivalAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoskildeFestivalAppDelegate.m; sourceTree = "<group>"; };
 		DDC3B83113AE594500F605A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DDC3B83C13AE5C5E00F605A7 /* RFController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFController.h; sourceTree = "<group>"; };
+		DDC3B83D13AE5C5F00F605A7 /* RFController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +130,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDC3B81C13AE594400F605A7 /* Cocoa.framework in Frameworks */,
+				DDB80BF313AE5DAB00062AA3 /* QuartzCore.framework in Frameworks */,
+				DD7799D613AEC78800011BF5 /* QTKit.framework in Frameworks */,
+				DDA533C113AFAB48004FD2B3 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD6D3FDB13B13C5C002D8CF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD6D3FE613B144E2002D8CF8 /* topbg.png */,
+				DD6D3FDC13B13C5C002D8CF8 /* bg.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD6D3FE513B14430002D8CF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD7799A113AE9A2E00011BF5 /* RFView.h */,
+				DD7799A213AE9A2E00011BF5 /* RFView.m */,
+				DD6D3FDF13B13EFC002D8CF8 /* RFMainView.h */,
+				DD6D3FE013B13EFC002D8CF8 /* RFMainView.m */,
+				DD6D3FE213B14429002D8CF8 /* RFTopView.h */,
+				DD6D3FE313B14429002D8CF8 /* RFTopView.m */,
+				DD7799A413AEAF8F00011BF5 /* RFAttachedView.h */,
+				DD7799A513AEAF8F00011BF5 /* RFAttachedView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DDA533D613AFC0E0004FD2B3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DDA533D713AFC0E0004FD2B3 /* JSON.h */,
+				DDA533D813AFC0E0004FD2B3 /* NSObject+SBJson.h */,
+				DDA533D913AFC0E0004FD2B3 /* NSObject+SBJson.m */,
+				DDA533DA13AFC0E0004FD2B3 /* SBJson.h */,
+				DDA533DB13AFC0E0004FD2B3 /* SBJsonParser.h */,
+				DDA533DC13AFC0E0004FD2B3 /* SBJsonParser.m */,
+				DDA533DD13AFC0E0004FD2B3 /* SBJsonStreamParser.h */,
+				DDA533DE13AFC0E0004FD2B3 /* SBJsonStreamParser.m */,
+				DDA533DF13AFC0E0004FD2B3 /* SBJsonStreamParserAccumulator.h */,
+				DDA533E013AFC0E0004FD2B3 /* SBJsonStreamParserAccumulator.m */,
+				DDA533E113AFC0E0004FD2B3 /* SBJsonStreamParserAdapter.h */,
+				DDA533E213AFC0E0004FD2B3 /* SBJsonStreamParserAdapter.m */,
+				DDA533E313AFC0E0004FD2B3 /* SBJsonStreamParserState.h */,
+				DDA533E413AFC0E0004FD2B3 /* SBJsonStreamParserState.m */,
+				DDA533E513AFC0E0004FD2B3 /* SBJsonStreamWriter.h */,
+				DDA533E613AFC0E0004FD2B3 /* SBJsonStreamWriter.m */,
+				DDA533E713AFC0E0004FD2B3 /* SBJsonStreamWriterAccumulator.h */,
+				DDA533E813AFC0E0004FD2B3 /* SBJsonStreamWriterAccumulator.m */,
+				DDA533E913AFC0E0004FD2B3 /* SBJsonStreamWriterState.h */,
+				DDA533EA13AFC0E0004FD2B3 /* SBJsonStreamWriterState.m */,
+				DDA533EB13AFC0E0004FD2B3 /* SBJsonTokeniser.h */,
+				DDA533EC13AFC0E0004FD2B3 /* SBJsonTokeniser.m */,
+				DDA533ED13AFC0E0004FD2B3 /* SBJsonUTF8Stream.h */,
+				DDA533EE13AFC0E0004FD2B3 /* SBJsonUTF8Stream.m */,
+				DDA533EF13AFC0E0004FD2B3 /* SBJsonWriter.h */,
+				DDA533F013AFC0E0004FD2B3 /* SBJsonWriter.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		DDC3B80C13AE594400F605A7 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +216,9 @@
 		DDC3B81A13AE594400F605A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDA533C013AFAB48004FD2B3 /* AudioToolbox.framework */,
+				DD7799D513AEC78800011BF5 /* QTKit.framework */,
+				DDB80BF213AE5DAB00062AA3 /* QuartzCore.framework */,
 				DDC3B81B13AE594400F605A7 /* Cocoa.framework */,
 				DDC3B81D13AE594400F605A7 /* Other Frameworks */,
 			);
@@ -82,10 +238,27 @@
 		DDC3B82113AE594400F605A7 /* RoskildeFestival */ = {
 			isa = PBXGroup;
 			children = (
+				DD6D3FDB13B13C5C002D8CF8 /* Resources */,
 				DDC3B82D13AE594400F605A7 /* RoskildeFestivalAppDelegate.h */,
 				DDC3B82E13AE594400F605A7 /* RoskildeFestivalAppDelegate.m */,
 				DDC3B83013AE594500F605A7 /* MainMenu.xib */,
 				DDC3B82213AE594400F605A7 /* Supporting Files */,
+				DDC3B83C13AE5C5E00F605A7 /* RFController.h */,
+				DDC3B83D13AE5C5F00F605A7 /* RFController.m */,
+				DDB80BF513AE5E0900062AA3 /* RFConcertLayer.h */,
+				DDB80BF613AE5E0900062AA3 /* RFConcertLayer.m */,
+				DDB80BF813AE631C00062AA3 /* RFXMLParser.h */,
+				DDB80BF913AE631C00062AA3 /* RFXMLParser.m */,
+				DDB80BFB13AE633100062AA3 /* RFConcertObject.h */,
+				DDB80BFC13AE633100062AA3 /* RFConcertObject.m */,
+				DD77999D13AE993500011BF5 /* MAAttachedWindow.h */,
+				DD77999E13AE993500011BF5 /* MAAttachedWindow.m */,
+				DD6D3FE513B14430002D8CF8 /* Views */,
+				DD7799B913AEB80B00011BF5 /* RFSoundCloud.h */,
+				DD7799BA13AEB80C00011BF5 /* RFSoundCloud.m */,
+				DDA533C313AFAB7A004FD2B3 /* AudioStreamer.h */,
+				DDA533C413AFAB7A004FD2B3 /* AudioStreamer.m */,
+				DDA533D613AFC0E0004FD2B3 /* Classes */,
 			);
 			path = RoskildeFestival;
 			sourceTree = "<group>";
@@ -109,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDC3B83513AE594500F605A7 /* Build configuration list for PBXNativeTarget "RoskildeFestival" */;
 			buildPhases = (
+				DD7799C013AEB95C00011BF5 /* CopyFiles */,
 				DDC3B81313AE594400F605A7 /* Sources */,
 				DDC3B81413AE594400F605A7 /* Frameworks */,
 				DDC3B81513AE594400F605A7 /* Resources */,
@@ -152,6 +326,8 @@
 				DDC3B82613AE594400F605A7 /* InfoPlist.strings in Resources */,
 				DDC3B82C13AE594400F605A7 /* Credits.rtf in Resources */,
 				DDC3B83213AE594500F605A7 /* MainMenu.xib in Resources */,
+				DD6D3FDD13B13C5C002D8CF8 /* bg.png in Resources */,
+				DD6D3FE713B144E2002D8CF8 /* topbg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +340,29 @@
 			files = (
 				DDC3B82813AE594400F605A7 /* main.m in Sources */,
 				DDC3B82F13AE594400F605A7 /* RoskildeFestivalAppDelegate.m in Sources */,
+				DDC3B83E13AE5C6000F605A7 /* RFController.m in Sources */,
+				DDB80BF713AE5E0900062AA3 /* RFConcertLayer.m in Sources */,
+				DDB80BFA13AE631C00062AA3 /* RFXMLParser.m in Sources */,
+				DDB80BFD13AE633100062AA3 /* RFConcertObject.m in Sources */,
+				DD77999F13AE993500011BF5 /* MAAttachedWindow.m in Sources */,
+				DD7799A313AE9A2E00011BF5 /* RFView.m in Sources */,
+				DD7799A613AEAF8F00011BF5 /* RFAttachedView.m in Sources */,
+				DD7799BB13AEB80C00011BF5 /* RFSoundCloud.m in Sources */,
+				DDA533C513AFAB7A004FD2B3 /* AudioStreamer.m in Sources */,
+				DDA533F113AFC0E0004FD2B3 /* NSObject+SBJson.m in Sources */,
+				DDA533F213AFC0E0004FD2B3 /* SBJsonParser.m in Sources */,
+				DDA533F313AFC0E0004FD2B3 /* SBJsonStreamParser.m in Sources */,
+				DDA533F413AFC0E0004FD2B3 /* SBJsonStreamParserAccumulator.m in Sources */,
+				DDA533F513AFC0E0004FD2B3 /* SBJsonStreamParserAdapter.m in Sources */,
+				DDA533F613AFC0E0004FD2B3 /* SBJsonStreamParserState.m in Sources */,
+				DDA533F713AFC0E0004FD2B3 /* SBJsonStreamWriter.m in Sources */,
+				DDA533F813AFC0E0004FD2B3 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				DDA533F913AFC0E0004FD2B3 /* SBJsonStreamWriterState.m in Sources */,
+				DDA533FA13AFC0E0004FD2B3 /* SBJsonTokeniser.m in Sources */,
+				DDA533FB13AFC0E0004FD2B3 /* SBJsonUTF8Stream.m in Sources */,
+				DDA533FC13AFC0E0004FD2B3 /* SBJsonWriter.m in Sources */,
+				DD6D3FE113B13EFC002D8CF8 /* RFMainView.m in Sources */,
+				DD6D3FE413B14429002D8CF8 /* RFTopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,20 +406,21 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -234,22 +434,28 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
 		DDC3B83613AE594500F605A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Development/Code/Roskilde/RoskildeFestival/RoskildeFestival\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoskildeFestival/RoskildeFestival-Prefix.pch";
 				INFOPLIST_FILE = "RoskildeFestival/RoskildeFestival-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -258,9 +464,14 @@
 		DDC3B83713AE594500F605A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Development/Code/Roskilde/RoskildeFestival/RoskildeFestival\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoskildeFestival/RoskildeFestival-Prefix.pch";
 				INFOPLIST_FILE = "RoskildeFestival/RoskildeFestival-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -285,6 +496,7 @@
 				DDC3B83713AE594500F605A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
